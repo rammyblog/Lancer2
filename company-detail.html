@@ -575,7 +575,7 @@
         .plusSubmit{
 
             position: absolute;
-            left: -65px;
+            left: -110px;
             top: 550px;
 
         }
@@ -585,9 +585,9 @@
 
 @media (max-width: 1024px) {
   .plusSubmit {
-	position: absolute;
-	left: -110px;
-	top: 929px;
+  position: absolute;
+  left: -110px;
+  top: 929px;
 }
 
         }
@@ -597,9 +597,9 @@
       
 
         .plusSubmit {
-	position: absolute;
-	left: -50px;
-	top: 929px;
+  position: absolute;
+  left: -50px;
+  top: 929px;
 }
         }
 
@@ -959,7 +959,7 @@
           $('.personal_info').append(`
           <div class="addNewContact">
           <button class="btn removeDesignation" style="float:right"><i class="fa fa-times"></i></button>
-          <div id="contactPersonDiv " class="innerWrapper">
+                 <div id="contactPersonDiv " class="innerWrapper">
                     <label for="contactPerson">Contact Person</label>
                     <input id="contactPerson" type="text" name="contactPerson" placeholder="Simbi Emmanuel">
                   </div>
@@ -967,11 +967,14 @@
                   <div class="twoColumns innerWrapper">
                     <div id="designationDiv">
                       <label for="designation">Designation</label>
-                      <input type="text" name="designation" id="designation" placeholder="Project Manager">
+                      <select name="designation" id="designation">
+                        <option>Project Manager</option>
+                        <option>Supervisor</option>
+                      </select>
                     </div>
                     <div id="personCountryDiv">
-                      <label for="personCountry">Country</label>
-                      <input id="personCountry" type="text" name="personCountry" placeholder="+23470389000000">
+                      <label for="personCountry">Contact Phone Number</label>
+                      <input id="personCountry" type="tel" name="personCountry" placeholder="+23470389000000">
                     </div>
                   </div>
                 </div>
